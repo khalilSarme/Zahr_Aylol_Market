@@ -1,0 +1,74 @@
+:root {
+    --text-color: #121212;
+    --bg-color: #f9f8f9;
+    --bx-shadow: #121212;
+    --link-color: #212121;
+    --link-active: rgba(225, 225, 225, 0.4);
+    --navbar-brand-color: #121212;
+    --bg-opacity: 1;
+    --bg-color-opacity: rgba(250, 0, 250 , 1);
+
+    --text-light-color: #121212;
+    --bg-light-color: #f9f8f9;
+
+    --text-dark-color: #f7f8f7;
+    --bg-dark-color: #121212;
+
+    --bx-light-shadow: #212121;
+
+    --bx-dark-shadow: #f9f8f9;
+
+    --link-light-color: #212121;
+
+    --link-dark-color: #f7f8f7;
+
+    --link-light-active: rgba(225, 225, 225, 0.4);
+
+    --link-dark-active: rgba(240, 240, 240, 0.1);
+
+    --navbar-brand-light-color: #121212;
+
+    --navbar-brand-dark-color: #F8F7F8;
+}
+
+html.light {
+    --text-color: #121212;
+    --bg-color: #f9f8f9;
+    --navbar-brand-color: #121212;
+}
+
+html.dark {
+    --text-color: #f4f3f4;
+    --bg-color: #121212;
+    --navbar-brand-color: #F8F7F8;
+}
+
+html.light.dodger {
+    --bx-shadow: dodgerblue;
+    --link-color: dodgerblue;
+    --navbar-brand-color: dodgerblue;
+    --bg-opacity: 0.1;
+    --bg-color-opacity: rgba(0, 150, 240, var(--bg-opacity));
+}
+
+html.light.crimson {
+    --bx-shadow: crimson;
+    --link-color: crimson;
+    --navbar-brand-color: crimson;
+    --bg-opacity: 0.1;
+    --bg-color-opacity: rgba(215, 0, 60, var(--bg-opacity));
+}
+
+html.dark.dodger {
+    --bx-shadow: dodgerblue;
+    --link-color: dodgerblue;
+    --bg-opacity: 0.3;
+    --bg-color-opacity: rgba(0, 150, 240, var(--bg-opacity));
+}
+
+html.dark.crimson {
+    --bx-shadow: crimson;
+    --link-color: crimson;
+    --bg-opacity: 0.3;
+    --bg-color-opacity: rgba(215, 0, 60, var(--bg-opacity));
+}
