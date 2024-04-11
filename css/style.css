@@ -190,3 +190,8 @@ body {
         margin: 0 !important;
     }
 }
+
+
+.website_content {
+    background-color: var(--bg-color-opacity);
+}
