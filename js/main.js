@@ -20,8 +20,6 @@ $(document).ready(function () {
       $("html.light.dodger").toggleClass("dodger").addClass("crimson");
       $("html.dark.dodger").toggleClass("dodger").addClass("crimson");
   });
-  
-
 
 });
 
