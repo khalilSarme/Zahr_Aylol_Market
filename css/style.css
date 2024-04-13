@@ -211,3 +211,12 @@ body {
     height: 80%;
     width: 100%;
 }
+
+.footer {
+    background-color: var(--link-color);
+    padding: 1rem;
+}
+
+.footer p {
+    font-size: 25px;
+}
