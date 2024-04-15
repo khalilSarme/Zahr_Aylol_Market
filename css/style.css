@@ -217,6 +217,10 @@ body {
     width: 100%;
 }
 
+.card .p_Info {
+    padding: 15px;
+}
+
 .footer {
     background-color: var(--bx-shadow);
     color: var(--text-color);
