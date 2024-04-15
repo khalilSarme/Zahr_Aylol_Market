@@ -210,7 +210,7 @@ body {
 }
 
 .card:hover {
-    box-shadow: 0 0 0 .02rem var(--bx-shadow);
+    box-shadow: 0 0 0 .2rem var(--bx-shadow);
 	transform: translateY(-5px);
 }
 
