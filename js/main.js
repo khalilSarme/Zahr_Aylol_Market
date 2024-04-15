@@ -10,9 +10,6 @@ $(document).ready(function () {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
     });
   }
-  $(".label_category").click(function() {
-    $(".category_collapse").slideToggle();
-  });
   $(".btn_search").on("click", function () {
     var value = $("#search_content").val().toLowerCase();
     $(".website_content .container").filter(function () {
