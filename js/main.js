@@ -2,7 +2,13 @@ $(document).ready(function () {
     
     var themeColor = getComputedStyle(document.documentElement).getPropertyValue('--bx-shadow').trim();
     $('meta[name="theme-color"]').attr('content', themeColor);
-    
+
+    $("#search_content").on("keyup" , function(){
+        var value = $(this).val().toLowerCase();
+        $(".website_content .container").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
 
     $(".navbar-toggler").click(function () {
         $("#navbar").slideToggle("show");
