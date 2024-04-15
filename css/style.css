@@ -220,6 +220,8 @@ body {
 
 .card .p_Info {
     padding: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer {
