@@ -1,417 +1,125 @@
 <!DOCTYPE html>
 <html lang="en" class="light crimson">
-<head>
+  <head>
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="theme-color" content="#112233" />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="apple-touch-icon" href="images/OIP.jpg">
 
-    <link rel="shortcut-icon" href="images/OIP.jpg" type="image/x-icon">
+    <meta name="description" content="Zahr Aylol Market is a shopping store , search for any products and if it is not found !  call us with a help request">
+    <link
+      rel="shortcut icon"
+      href="images/Zahr_Aylol.svg"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="images/Zahr_Aylol.svg" />
 
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    
-    <!--
-    <link rel="stylesheet" href="../../Front-End-Projects/Khalil_Net/css/fontawesome-free-5.15.4-web/css/all.min.css">
 
+    <!--
+    <link
+      rel="stylesheet"
+      href="../../Front-End-Projects/Khalil_Net/css/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+
+    
     <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.min.css" type="text/css" media="all" />
     -->
-    
+
     <link
-    rel="stylesheet"
-    href="css/khalil_framework.min.css"
-    type="text/css"
-    media="all"
+      rel="stylesheet"
+      href="css/khalil_framework.min.css"
+      type="text/css"
+      media="all"
     />
-    
-    <link rel="stylesheet" href="css/assest_framework.min.css" type="text/css" media="all" />
+
+    <link
+      rel="stylesheet"
+      href="css/assest_framework.min.css"
+      type="text/css"
+      media="all"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
 
-    <title> Zahr Aylol Market | Contact </title>
-</head>
-<body class="min-height-100vh">
+    <meta name="theme-color" content="" />
+
+    <title>Zahr Aylol Market | Home</title>
+  </head>
+  <body class="min-height-100vh">
     <nav class="navbar navbar-expand-xl">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">
-                <span>Zahr Aylol</span>
-            </a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbar"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                >
-                <span class="fa fa-bars"></span>
+      <div class="container">
+        <a href="index.html" class="navbar-brand" title="Zaher Aylol">
+          <img src="images/Zahr_Aylol.svg" alt="Zahr Aylol Market Logo" srcset="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <i class="fas fa-home"></i>
+                <h6>Home</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">
+                <i class="fas fa-store-alt"></i>
+                <h6>Products</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link active">
+                <i class="fas fa-headset"></i>
+                <h6>Contact</h6>
+              </a>
+            </li>
+          </ul>
+          <div class="change-theme" title="Change Theme Color">
+            <button class="btn-theme root-theme">
+              <span id="theme-icon" class="fa fa-sun"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">
-                            <i class="fas fa-home"></i>
-                            <h6> Home </h6>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="products.html" class="nav-link">
-                            <i class="fas fa-store-alt"></i>
-                            <h6> Products </h6>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link active">
-                            <i class="fas fa-headset"></i>
-                            <h6> Contact </h6>
-                        </a>
-                    </li>
-                </ul>
-                <div class="change-theme">
-                    <button class="btn-theme root-theme">
-                        <span id="theme-icon" class="fa fa-sun"></span>
-                    </button>
-                    <button class="btn-theme crimson-button">
-                        <span class="crimson-theme"></span>
-                    </button>
-                    <button class="btn-theme dodger-button">
-                        <span class="dodgerBlue-theme"></span>
-                    </button>
-                </div>
-            </div>
+            <button class="btn-theme crimson-button">
+              <span class="crimson-theme"></span>
+            </button>
+            <button class="btn-theme dodger-button">
+              <span class="dodgerBlue-theme"></span>
+            </button>
+          </div>
         </div>
+      </div>
     </nav>
 
-    <div class="search_website">
-        <div class="container">
-            <form
-                class="search_website_content"
-                action=""
-                method="post"
-                accept-charset="utf-8"
-                autocomplete="off"
-                >
-                <input
-                type="text"
-                name="search_website_content"
-                id="search_content"
-                value=""
-                placeholder="Search"
-                autocomplete="off"
-                />
-                <button class="btn_search" type="submit">
-                    <span class="fa fa-search"></span>
-                </button>
-            </form>
-        </div>
-    </div>
-
     <div class="website_content min-height-100vh">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 col-md-6 col-12">
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-4 col-md-6 col-12">
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-4 col-md-6 col-12">
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-4 col-md-6 col-12">
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-4 col-md-6 col-12">
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-4 col-md-6 col-12">
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img class="card-Image" src="images/OIP.jpg" alt="" />
-                        <div class="p_Info">
-                            <div class="p_Name">
-                                Product Name <span class="pro_Name"></span>
-                            </div>
-                            <div class="p_Price">
-                                Price <span class="pro_Price"></span>
-                            </div>
-                            <div class="p_Available">
-                                Available <span class="pro_Available"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="container">
+        
+      </div>
     </div>
 
     <div class="footer">
-        <p>
-            All Rights Recerved To &#169;  KHALIL . NET
-        </p>
+      <div class="container">
+        <p>All Rights Recerved To &#169; <span> KHALIL . NET </span></p>
+      </div>
     </div>
 
     <script
-        src="js/jquery-3.6.0.min.js"
-        type="text/javascript"
-        charset="utf-8"
-        ></script>
+      src="js/jquery-3.6.0.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
     <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
-</body>
+  </body>
 </html>
