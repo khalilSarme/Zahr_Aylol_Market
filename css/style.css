@@ -224,6 +224,14 @@ body {
     justify-content: center;
 }
 
+.label_category {
+    margin: 20px;
+    display: flex;
+    flex: 1 0 100%;
+    justify-content: center;
+    background-color: var(--bg-color-opacity);
+}
+
 .footer {
     background-color: var(--bx-shadow);
     color: var(--text-color);
