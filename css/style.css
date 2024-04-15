@@ -78,7 +78,7 @@ body {
 .change-theme {
     display: flex;
     align-items: center;
-    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .change-theme button {
