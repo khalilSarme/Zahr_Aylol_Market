@@ -190,7 +190,7 @@ body {
 }
 
 .website_content {
-    padding: 1rem;
+    padding: 2rem 1rem;
     background-color: var(--bg-color);
 }
 
