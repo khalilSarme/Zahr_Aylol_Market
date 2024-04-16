@@ -5,23 +5,22 @@ $(document).ready(function() {
     .trim();
   $('meta[name="theme-color"]')
     .attr("content", themeColor);
-  $('.col-6').on('click',
+  $(".arrow").hide();
+  $('[class^="col"]').on('click',
     '.label_category',
     function() {
-      $('.col-6').not($(this)
-          .closest('.col-6'))
+      $('[class^="col"]').not($(this)
+          .closest('[class^="col"]'))
         .hide(); // Hide other col elements
       $('.category_collapse')
         .hide(); // Hide other category elements
-      $('.arrow')
-    .hide(); // Hide other arrow buttons
-      $(this).closest('.col-6')
+      $(this).closest('[class^="col"]')
         .show(); // Show the clicked col element
 
       $(this).siblings(
           '.category_collapse')
         .show(); // Show the corresponding category content
-      $(this).siblings('.arrow')
+      $('.arrow')
         .show(); // Show the arrow button
       $(this).attr('disabled',
         true
@@ -30,7 +29,7 @@ $(document).ready(function() {
 
   $('.row').on('click', '.arrow',
     function() {
-      $('.col-6')
+      $('[class^="col"]')
     .show(); // Show all col elements
       $('.category_collapse')
         .hide(); // Hide all category elements
