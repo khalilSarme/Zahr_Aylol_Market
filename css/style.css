@@ -9,10 +9,15 @@
     border-radius: 5px;
 }
 
+@font-face {
+    font-family: Overlock;
+    src: url(fonts/Overlock-BoldItalic.ttf);
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-} 
+}
 
 .navbar {
     background-color: transparent !important;
@@ -20,19 +25,12 @@ body {
 
 .navbar .navbar-brand {
     background-color: transparent !important;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    font-size: 36px;
-    color: var(--navbar-brand-color) !important;
+    font-size: 50px;
 }
 
-.navbar .navbar-toggler {
-    color: var(--text-color);
-    background-color: transparent !important;
-}
-
-.navbar .navbar-toggler:hover {
-    box-shadow: 0 0 0 0.2rem var(--bx-shadow) !important;
+.navbar-brand span {
+    font-family: Overlock;
+    color: var(--bx-shadow);
 }
 
 .navbar ul li {
@@ -47,6 +45,10 @@ body {
     color: var(--text-color);
     position: relative;
     letter-spacing: 1px;
+}
+
+.navbar ul li a:active , .navbar ul li a.active , .navbar ul li a:hover {
+    color: var(--bx-shadow);
 }
 
 .navbar ul li a.active::after,
@@ -67,12 +69,6 @@ body {
     width: 30px;
     align-items: center;
     justify-content: center;
-}
-
-.navbar ul li a.active,
-.navbar ul li a:active,
-.navbar ul li a:hover {
-    color: var(--link-color);
 }
 
 .change-theme {
@@ -97,8 +93,12 @@ body {
     box-shadow: 0 0 0 0.1rem crimson !important;
 }
 
-.change-theme button.dodger-button {
+.change-theme button.dodgerblue-button {
     box-shadow: 0 0 0 0.1rem dodgerblue !important;
+}
+
+.change-theme button.blueviolet-button {
+    box-shadow: 0 0 0 0.1rem blueviolet !important;
 }
 
 .change-theme button:last-of-type {
@@ -106,7 +106,8 @@ body {
 }
 
 .crimson-theme,
-.dodgerBlue-theme {
+.dodgerblue-theme,
+.blueviolet-theme {
     border-radius: 50px;
     padding: 13.4px;
 }
@@ -115,8 +116,12 @@ body {
     background-color: crimson !important;
 }
 
-.dodgerBlue-theme {
+.dodgerblue-theme {
     background-color: dodgerblue !important;
+}
+
+.blueviolet-theme {
+    background-color: blueviolet !important;
 }
 
 .search_website {
@@ -249,14 +254,14 @@ body {
 
 .footer {
     background-color: var(--bx-shadow);
-    color: #F6F5F6 !important;
+    color: #F7F6F7 !important;
     padding: 1rem;
     display: flex;
     align-items: center;
 }
 
 .footer p {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
     display: inline-block;
     flex: 1 0 100%;

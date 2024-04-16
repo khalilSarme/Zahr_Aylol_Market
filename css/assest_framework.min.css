@@ -7,43 +7,26 @@
     --navbar-brand-color: #121212;
     --bg-opacity: 1;
     --bg-color-opacity: rgba(250, 0, 250 , 1);
-
-    --text-light-color: #121212;
-    --bg-light-color: #f9f8f9;
-
-    --text-dark-color: #f7f8f7;
-    --bg-dark-color: #121212;
-
-    --bx-light-shadow: #212121;
-
-    --bx-dark-shadow: #f9f8f9;
-
-    --link-light-color: #212121;
-
-    --link-dark-color: #f7f8f7;
-
-    --link-light-active: rgba(225, 225, 225, 0.4);
-
-    --link-dark-active: rgba(240, 240, 240, 0.1);
-
-    --navbar-brand-light-color: #121212;
-
-    --navbar-brand-dark-color: #F8F7F8;
+    --text-inner-color: #121212;
 }
 
 html.light {
     --text-color: #121212;
     --bg-color: #f9f8f9;
     --navbar-brand-color: #121212;
+    --bx-shadow: #121212;
+    --text-inner-color: #f8f7f8;
 }
 
 html.dark {
     --text-color: #f4f3f4;
     --bg-color: #121212;
     --navbar-brand-color: #F8F7F8;
+    --bx-shadow: #f8f7f8;
+    --text-inner-color: #121212;
 }
 
-html.light.dodger {
+html.light.dodgerblue {
     --bx-shadow: dodgerblue;
     --link-color: dodgerblue;
     --navbar-brand-color: dodgerblue;
@@ -59,7 +42,15 @@ html.light.crimson {
     --bg-color-opacity: rgba(215, 0, 60, var(--bg-opacity));
 }
 
-html.dark.dodger {
+html.light.blueviolet {
+    --bx-shadow: blueviolet;
+    --link-color: blueviolet;
+    --navbar-brand-color: blueviolet;
+    --bg-opacity: 0.1;
+    --bg-color-opacity: rgba(200, 0, 215, var(--bg-opacity));
+}
+
+html.dark.dodgerblue {
     --bx-shadow: dodgerblue;
     --link-color: dodgerblue;
     --bg-opacity: 0.3;
@@ -72,3 +63,21 @@ html.dark.crimson {
     --bg-opacity: 0.3;
     --bg-color-opacity: rgba(215, 0, 60, var(--bg-opacity));
 }
+
+html.dark.blueviolet {
+    --bx-shadow: blueviolet;
+    --link-color: blueviolet;
+    --bg-opacity: 0.3;
+    --bg-color-opacity: rgba(200, 0, 215, var(--bg-opacity));
+}
+
+
+
+
+
+
+
+
+
+
+
