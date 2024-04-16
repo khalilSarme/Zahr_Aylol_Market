@@ -13,16 +13,6 @@ $(document).ready(function() {
           '.category_collapse')
         .slideToggle();
     });
-  function validate() {
-    var value = $("#search_content")
-      .val().toLowerCase();
-    $(".website_content .container")
-      .filter(function() {
-        $(this).toggle($(this)
-          .text().toLowerCase()
-          .indexOf(value) > -1);
-      });
-  }
   $(".btn_search").on("click", function () {
     var value = $("#search_content").val().toLowerCase();
     $(".website_content .container").filter(function () {
