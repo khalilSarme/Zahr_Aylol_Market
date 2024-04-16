@@ -6,40 +6,13 @@ $(document).ready(function() {
   $('meta[name="theme-color"]')
     .attr("content", themeColor);
   $(".arrow").hide();
-  $('[class^="col"]').on('click',
+  $('.row [class^="col"]').on('click',
     '.label_category',
     function() {
-      $('[class^="col"]').not($(this)
-          .closest('[class^="col"]'))
-        .hide(); // Hide other col elements
-      $('.category_collapse')
-        .hide(); // Hide other category elements
-      $(this).closest('[class^="col"]')
-        .show(); // Show the clicked col element
-
       $(this).siblings(
           '.category_collapse')
-        .show(); // Show the corresponding category content
-      $('.arrow')
-        .show(); // Show the arrow button
-      $(this).attr('disabled',
-        true
-        ); // Disable the clicked h2 element
+        .slideToggle();
     });
-
-  $('.row').on('click', '.arrow',
-    function() {
-      $('[class^="col"]')
-    .show(); // Show all col elements
-      $('.category_collapse')
-        .hide(); // Hide all category elements
-      $('.arrow')
-    .hide(); // Hide all arrow buttons
-      $('.label').attr('disabled',
-        false
-        ); // Enable all h2 elements
-    });
-
   function validate() {
     var value = $("#search_content")
       .val().toLowerCase();
