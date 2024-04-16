@@ -23,6 +23,13 @@ body {
     background-color: transparent !important;
 }
 
+.navbar-toggler span {
+    background-color: transparent !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar .navbar-brand {
     background-color: transparent !important;
     font-size: 50px;
@@ -74,13 +81,14 @@ body {
 .change-theme {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     padding-left: 5px;
 }
 
 .change-theme button {
     height: 50px;
     width: 50px;
-    margin: 0 20px 0 0;
+    margin-right: 20px;
     border-radius: 15px;
     box-shadow: 0 0 0 0.08rem var(--bx-shadow);
     background-color: transparent !important;
@@ -88,6 +96,13 @@ body {
     position: relative;
     font-size: 25px;
 }
+
+@media (max-width: 767px) {
+    .change-theme button {
+        margin-top: 10px;
+    }
+}
+
 
 .change-theme button.crimson-button {
     box-shadow: 0 0 0 0.1rem crimson !important;
@@ -102,7 +117,7 @@ body {
 }
 
 .change-theme button:last-of-type {
-    margin: 0 !important;
+    margin-right: 0 !important;
 }
 
 .crimson-theme,

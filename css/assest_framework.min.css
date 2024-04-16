@@ -31,7 +31,7 @@ html.light.dodgerblue {
     --link-color: dodgerblue;
     --navbar-brand-color: dodgerblue;
     --bg-opacity: 0.1;
-    --bg-color-opacity: rgba(0, 150, 240, var(--bg-opacity));
+    --bg-color-opacity: rgba(30, 144, 255, var(--bg-opacity));
 }
 
 html.light.crimson {
@@ -39,7 +39,7 @@ html.light.crimson {
     --link-color: crimson;
     --navbar-brand-color: crimson;
     --bg-opacity: 0.1;
-    --bg-color-opacity: rgba(215, 0, 60, var(--bg-opacity));
+    --bg-color-opacity: rgba(220, 20, 60, var(--bg-opacity));
 }
 
 html.light.blueviolet {
@@ -47,7 +47,7 @@ html.light.blueviolet {
     --link-color: blueviolet;
     --navbar-brand-color: blueviolet;
     --bg-opacity: 0.1;
-    --bg-color-opacity: rgba(200, 0, 215, var(--bg-opacity));
+    --bg-color-opacity: rgba(138, 43, 226, var(--bg-opacity));
 }
 
 html.dark.dodgerblue {
