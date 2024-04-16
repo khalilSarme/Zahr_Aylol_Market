@@ -3,7 +3,9 @@ $(document).ready(function () {
     .getPropertyValue("--bx-shadow")
     .trim();
   $('meta[name="theme-color"]').attr("content", themeColor);
-
+  $("div[class^='col']").on('click', '.label_category', function() {
+            $(this).siblings('.category').slideToggle();
+  });
   function validate() {
     var value = $("#search_content").val().toLowerCase();
     $(".website_content .container").filter(function () {
