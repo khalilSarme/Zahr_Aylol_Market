@@ -203,29 +203,30 @@ body {
 
 .card {
     background-color: var(--bg-color-opacity);
-    margin-top: 20px;
+    justify-content: center;
+    border-radius: 17px;
 }
 
 .Home_page_card {
-    
     background-color: var(--bx-shadow);
     color: #F8F7F8 !important;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     width: 100%;
     margin: 20px 0 0 0;
     justify-content: center;
     flex: 1 0 100%;
+    padding: 15px 15px 15px 25px;
+}
+
+.Home_page_card h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .card img {
     height: 80%;
     width: 100%;
-}
-
-.card .p_Info {
-    padding: 15px;
-    display: flex;
-    align-items: center;
 }
 
 .footer {
