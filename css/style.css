@@ -201,7 +201,7 @@ body {
     }
 }
 
-.card {
+.products_list .card {
     background-color: var(--bg-color-opacity);
     border-radius: 0 !important;
     margin-top: 20px;
@@ -209,7 +209,7 @@ body {
     transition: transform .2s ease-in-out
 }
 
-.card:hover {
+.products_list .card:hover {
 	transform: translateY(-5px);
 }
 
@@ -218,10 +218,9 @@ body {
     width: 100%;
 }
 
-.card .p_Info {
-    padding: 15px;
+.products_list .card .p_Info {
+    padding: 15px 15px 15px 25px;
     display: flex;
-    justify-content: center;
 }
 
 .label_category {
@@ -233,7 +232,6 @@ body {
     margin: 20px 0 0 0;
     display: flex;
     flex: 1 0 100%;
-    justify-content: center;
 }
 
 .footer {
