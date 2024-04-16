@@ -203,9 +203,18 @@ body {
 
 .card {
     background-color: var(--bg-color-opacity);
-    border-radius: 0 !important;
     margin-top: 20px;
-    font-size: 25px;
+}
+
+.Home_page_card {
+    
+    background-color: var(--bx-shadow);
+    color: #F8F7F8 !important;
+    letter-spacing: 1.5px;
+    width: 100%;
+    margin: 20px 0 0 0;
+    justify-content: center;
+    flex: 1 0 100%;
 }
 
 .card img {
@@ -214,19 +223,9 @@ body {
 }
 
 .card .p_Info {
-    padding: 15px 15px 15px 25px;
+    padding: 15px;
     display: flex;
-}
-
-.label_category {
-    background-color: var(--bx-shadow);
-    color: #F8F7F8 !important;
-    letter-spacing: 1.5px;
-    padding: 25px;
-    width: 100%;
-    margin: 20px 0 0 0;
-    display: flex;
-    flex: 1 0 100%;
+    align-items: center;
 }
 
 .footer {
