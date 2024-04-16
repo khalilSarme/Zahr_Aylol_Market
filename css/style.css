@@ -201,16 +201,11 @@ body {
     }
 }
 
-.products_list .card {
+.card {
     background-color: var(--bg-color-opacity);
     border-radius: 0 !important;
     margin-top: 20px;
     font-size: 25px;
-    transition: transform .2s ease-in-out
-}
-
-.products_list .card:hover {
-	transform: translateY(-5px);
 }
 
 .card img {
@@ -218,7 +213,7 @@ body {
     width: 100%;
 }
 
-.products_list .card .p_Info {
+.card .p_Info {
     padding: 15px 15px 15px 25px;
     display: flex;
 }
