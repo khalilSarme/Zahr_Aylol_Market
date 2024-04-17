@@ -10,11 +10,29 @@ $(document).ready(function () {
       if (!documentRoot.includes(theme)) {
         documentRoot = `${theme} light`;
         document.querySelector("html").className = documentRoot;
+        themeColor =
+          getComputedStyle(document
+            .documentElement)
+          .getPropertyValue(
+            "--bx-shadow")
+          .trim();
+        $('meta[name="theme-color"]')
+          .attr("content",
+            themeColor);
       }
     } else if (documentRoot.includes("dark")) {
       if (!documentRoot.includes(theme)) {
         documentRoot = `${theme} dark`;
         document.querySelector("html").className = documentRoot;
+        themeColor =
+          getComputedStyle(document
+            .documentElement)
+          .getPropertyValue(
+            "--bx-shadow")
+          .trim();
+        $('meta[name="theme-color"]')
+          .attr("content",
+            themeColor);
       }
     } else {
       return;

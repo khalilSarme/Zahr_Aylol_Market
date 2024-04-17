@@ -18,8 +18,8 @@ $(document).ready(function() {
     $(".root-theme").click(
         function() {
             $("#theme-icon")
-            .toggleClass("fa-sun")
-            .toggleClass("fa-moon");
+            .toggleClass("fa-moon")
+            .toggleClass("fa-sun");
             $("html").toggleClass(
                 "dark").toggleClass(
                 "light");
