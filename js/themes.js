@@ -38,14 +38,39 @@ function changeTheme(theme) {
     } else {
         return;
     }
-    
-    
 }
 
+rootTheme.addEventListener('click' , () => {
+    setTheme();
+});
+
+function setTheme() {
+    let documentTheme = document.querySelector('html').className;
+    let iconThemeButton = document.querySelector('#theme-icon').className;
+    if(documentTheme.includes('light') && iconThemeButton.includes('fa-moon')) {
+        document.querySelector('html').classList.remove('light');
+        document.querySelector('html').classList.add('dark');
+        document.querySelector('#theme-icon').className = 'fa fa-sun';
+        storeIcon();
+    } else if(documentTheme.includes('dark') && iconThemeButton.includes('fa fa-sun')) {
+        document.querySelector('html').classList.remove('dark');
+        document.querySelector('html').classList.add('light');
+        document.querySelector('#theme-icon').className = 'fa fa-moon';
+        storeIcon();
+    }
+}
+
+function storeIcon() {
+    let documentTheme = document.querySelector('html').className;
+    let themeicon = document.querySelector('#theme-icon').className;
+    localStorage.setItem('themeToggleButton' , themeicon);
+    localStorage.setItem('rootThemeColor' , documentTheme);
+}
 
 function loadTheme() {
     let storedThemeMetaColor = localStorage.getItem('themeMetaColor');
-    let storedIcon = localStorage.getItem('iconButtonTheme');
+    let storedIcon = localStorage.getItem('themeToggleButton');
+    let storedRootThemeColor = localStorage.getItem('rootThemeColor');
     
     if (storedThemeMetaColor) {
         metaColor.setAttribute('content', storedThemeMetaColor);
@@ -58,7 +83,18 @@ function loadTheme() {
             return;
         }
     }
-    
+
+    if(storedIcon && storedRootThemeColor) {
+        if(storedRootThemeColor.includes('light') && storedIcon.includes('fa-moon')) {
+            document.querySelector('html').classList.remove('dark');
+            document.querySelector('html').classList.add('light')
+            document.querySelector('#theme-icon').className = 'fa fa-moon';
+        } else if(storedRootThemeColor.includes('dark') && storedIcon.includes('fa-sun')) {
+            document.querySelector('html').classList.remove('light');
+            document.querySelector('html').classList.add('dark');
+            document.querySelector('#theme-icon').className = 'fa fa-sun';
+        }
+    }
     
 }
 
