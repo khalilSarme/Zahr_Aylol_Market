@@ -9,30 +9,38 @@
     border-radius: 5px;
 }
 
+@font-face {
+    font-family: Overlock;
+    src: url(fonts/Overlock-BoldItalic.ttf);
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-} 
+    position: relative;
+    z-index: -1000;
+}
 
 .navbar {
     background-color: transparent !important;
+    position: relative;
+}
+
+.navbar-toggler span {
+    background-color: transparent !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar .navbar-brand {
     background-color: transparent !important;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    font-size: 36px;
-    color: var(--navbar-brand-color) !important;
+    font-size: 50px;
 }
 
-.navbar .navbar-toggler {
-    color: var(--text-color);
-    background-color: transparent !important;
-}
-
-.navbar .navbar-toggler:hover {
-    box-shadow: 0 0 0 0.2rem var(--bx-shadow) !important;
+.navbar-brand span {
+    font-family: Overlock;
+    color: var(--bx-shadow);
 }
 
 .navbar ul li {
@@ -46,7 +54,11 @@ body {
     font-size: 30px;
     color: var(--text-color);
     position: relative;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+}
+
+.navbar ul li a:active , .navbar ul li a.active , .navbar ul li a:hover {
+    color: var(--bx-shadow);
 }
 
 .navbar ul li a.active::after,
@@ -69,21 +81,17 @@ body {
     justify-content: center;
 }
 
-.navbar ul li a.active,
-.navbar ul li a:active,
-.navbar ul li a:hover {
-    color: var(--link-color);
-}
-
 .change-theme {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    padding-left: 5px;
 }
 
 .change-theme button {
     height: 50px;
     width: 50px;
-    margin: 0 20px 0 0;
+    margin-right: 20px;
     border-radius: 15px;
     box-shadow: 0 0 0 0.08rem var(--bx-shadow);
     background-color: transparent !important;
@@ -92,20 +100,32 @@ body {
     font-size: 25px;
 }
 
+@media (max-width: 767px) {
+    .change-theme button {
+        margin-top: 10px;
+    }
+}
+
+
 .change-theme button.crimson-button {
     box-shadow: 0 0 0 0.1rem crimson !important;
 }
 
-.change-theme button.dodger-button {
-    box-shadow: 0 0 0 0.1rem dodgerblue !important;
+.change-theme button.SteelBlue-button {
+    box-shadow: 0 0 0 0.1rem SteelBlue !important;
+}
+
+.change-theme button.darkviolet-button {
+    box-shadow: 0 0 0 0.1rem darkviolet !important;
 }
 
 .change-theme button:last-of-type {
-    margin: 0 !important;
+    margin-right: 0 !important;
 }
 
 .crimson-theme,
-.dodgerBlue-theme {
+.SteelBlue-theme,
+.darkviolet-theme {
     border-radius: 50px;
     padding: 13.4px;
 }
@@ -114,8 +134,12 @@ body {
     background-color: crimson !important;
 }
 
-.dodgerBlue-theme {
-    background-color: dodgerblue !important;
+.SteelBlue-theme {
+    background-color: SteelBlue !important;
+}
+
+.darkviolet-theme {
+    background-color: darkviolet !important;
 }
 
 .search_website {
@@ -189,7 +213,7 @@ body {
 }
 
 .website_content {
-    padding: 1rem;
+    padding: 2rem 1rem;
     background-color: var(--bg-color);
 }
 
@@ -202,12 +226,74 @@ body {
 
 .card {
     background-color: var(--bg-color-opacity);
-    border-radius: 0 !important;
-    margin-top: 20px;
-    font-size: 15px;
+    justify-content: center;
+    border-radius: 17px;
+}
+
+.Home_page_card {
+    background-color: var(--bx-shadow);
+    color: #F8F7F8 !important;
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 20px 0 0 0;
+    justify-content: center;
+    flex: 1 0 100%;
+    padding: 20px 20px 20px 25px;
+    font-size: 30px !important;
+}
+
+.Home_page_card h6 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .card img {
     height: 80%;
     width: 100%;
+}
+.carousel {
+    margin: 50px 0;
+    position: relative;
+    background-color: var(--bg-color-opacity);
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carousel img {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 0 1rem 0 0;
+}
+
+.footer {
+    background-color: var(--bx-shadow);
+    color: #F7F6F7 !important;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    display: inline-block;
+    flex: 1 0 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.footer p span {
+    display: block;
+}
+
+@media (max-width: 1199.98px) {
+    .footer > .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
