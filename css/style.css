@@ -111,12 +111,8 @@ body {
     box-shadow: 0 0 0 0.1rem crimson !important;
 }
 
-.change-theme button.SteelBlue-button {
-    box-shadow: 0 0 0 0.1rem SteelBlue !important;
-}
-
-.change-theme button.darkviolet-button {
-    box-shadow: 0 0 0 0.1rem darkviolet !important;
+.change-theme button.dodger-button {
+    box-shadow: 0 0 0 0.1rem dodgerblue !important;
 }
 
 .change-theme button:last-of-type {
@@ -124,8 +120,7 @@ body {
 }
 
 .crimson-theme,
-.SteelBlue-theme,
-.darkviolet-theme {
+.dodgerBlue-theme {
     border-radius: 50px;
     padding: 13.4px;
 }
@@ -134,12 +129,8 @@ body {
     background-color: crimson !important;
 }
 
-.SteelBlue-theme {
-    background-color: SteelBlue !important;
-}
-
-.darkviolet-theme {
-    background-color: darkviolet !important;
+.dodgerBlue-theme {
+    background-color: dodgerblue !important;
 }
 
 .search_website {

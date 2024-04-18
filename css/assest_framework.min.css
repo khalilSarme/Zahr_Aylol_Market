@@ -26,10 +26,10 @@ html.dark {
     --text-inner-color: #121212;
 }
 
-html.light.SteelBlue {
-    --bx-shadow: SteelBlue;
-    --link-color: SteelBlue;
-    --navbar-brand-color: SteelBlue;
+html.light.dodger {
+    --bx-shadow: dodgerblue;
+    --link-color: dodgerblue;
+    --navbar-brand-color: dodgerblue;
     --bg-opacity: 0.1;
     --bg-color-opacity: rgba(30, 144, 255, var(--bg-opacity));
 }
@@ -42,17 +42,9 @@ html.light.crimson {
     --bg-color-opacity: rgba(220, 20, 60, var(--bg-opacity));
 }
 
-html.light.darkviolet {
-    --bx-shadow: darkviolet;
-    --link-color: darkviolet;
-    --navbar-brand-color: darkviolet;
-    --bg-opacity: 0.1;
-    --bg-color-opacity: rgba(138, 43, 226, var(--bg-opacity));
-}
-
-html.dark.SteelBlue {
-    --bx-shadow: SteelBlue;
-    --link-color: SteelBlue;
+html.dark.dodger {
+    --bx-shadow: dodgerblue;
+    --link-color: dodgerblue;
     --bg-opacity: 0.3;
     --bg-color-opacity: rgba(0, 150, 240, var(--bg-opacity));
 }
