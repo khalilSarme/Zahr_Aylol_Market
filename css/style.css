@@ -111,8 +111,8 @@ body {
     box-shadow: 0 0 0 0.1rem crimson !important;
 }
 
-.change-theme button.CornflowerBlue-button {
-    box-shadow: 0 0 0 0.1rem CornflowerBlue !important;
+.change-theme button.steelblue-button {
+    box-shadow: 0 0 0 0.1rem steelblue !important;
 }
 
 .change-theme button.darkviolet-button {
@@ -124,7 +124,7 @@ body {
 }
 
 .crimson-theme,
-.CornflowerBlue-theme,
+.steelblue-theme,
 .darkviolet-theme {
     border-radius: 50px;
     padding: 13.4px;
@@ -134,8 +134,8 @@ body {
     background-color: crimson !important;
 }
 
-.CornflowerBlue-theme {
-    background-color: CornflowerBlue !important;
+.steelblue-theme {
+    background-color: steelblue !important;
 }
 
 .darkviolet-theme {

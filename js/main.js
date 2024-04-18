@@ -13,17 +13,6 @@ $(document).ready(function() {
         e.target.classList.add(
             "active");
     });
-
-
-    $(".root-theme").click(
-        function() {
-            $("#theme-icon")
-            .toggleClass("fa-moon")
-            .toggleClass("fa-sun");
-            $("html").toggleClass(
-                "dark").toggleClass(
-                "light");
-        });
 });
 
 

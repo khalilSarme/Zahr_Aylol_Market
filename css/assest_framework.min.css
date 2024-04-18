@@ -26,10 +26,10 @@ html.dark {
     --text-inner-color: #121212;
 }
 
-html.light.CornflowerBlue {
-    --bx-shadow: CornflowerBlue;
-    --link-color: CornflowerBlue;
-    --navbar-brand-color: CornflowerBlue;
+html.light.steelblue {
+    --bx-shadow: steelblue;
+    --link-color: steelblue;
+    --navbar-brand-color: steelblue;
     --bg-opacity: 0.1;
     --bg-color-opacity: rgba(30, 144, 255, var(--bg-opacity));
 }
@@ -50,9 +50,9 @@ html.light.darkviolet {
     --bg-color-opacity: rgba(138, 43, 226, var(--bg-opacity));
 }
 
-html.dark.CornflowerBlue {
-    --bx-shadow: CornflowerBlue;
-    --link-color: CornflowerBlue;
+html.dark.steelblue {
+    --bx-shadow: steelblue;
+    --link-color: steelblue;
     --bg-opacity: 0.3;
     --bg-color-opacity: rgba(0, 150, 240, var(--bg-opacity));
 }
