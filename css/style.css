@@ -107,8 +107,8 @@ body {
 }
 
 
-.change-theme button.crimson-button {
-    box-shadow: 0 0 0 0.1rem crimson !important;
+.change-theme button.rose-button {
+    box-shadow: 0 0 0 0.1rem rose !important;
 }
 
 .change-theme button.steelblue-button {
@@ -123,15 +123,15 @@ body {
     margin-right: 0 !important;
 }
 
-.crimson-theme,
+.rose-theme,
 .steelblue-theme,
 .darkviolet-theme {
     border-radius: 50px;
     padding: 13.4px;
 }
 
-.crimson-theme {
-    background-color: crimson !important;
+.rose-theme {
+    background-color: rose !important;
 }
 
 .steelblue-theme {

@@ -10,7 +10,7 @@ let btn_themes = document.querySelectorAll('.btn-theme');
 
 
 btn_themes.item(0).addEventListener('click', () => {
-    changeTheme('crimson');
+    changeTheme('rose');
 });
 
 btn_themes.item(1).addEventListener('click', () => {

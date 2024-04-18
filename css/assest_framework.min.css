@@ -34,10 +34,10 @@ html.light.steelblue {
     --bg-color-opacity: rgba(30, 144, 255, var(--bg-opacity));
 }
 
-html.light.crimson {
-    --bx-shadow: crimson;
-    --link-color: crimson;
-    --navbar-brand-color: crimson;
+html.light.rose {
+    --bx-shadow: rose;
+    --link-color: rose;
+    --navbar-brand-color: rose;
     --bg-opacity: 0.1;
     --bg-color-opacity: rgba(220, 20, 60, var(--bg-opacity));
 }
@@ -57,9 +57,9 @@ html.dark.steelblue {
     --bg-color-opacity: rgba(0, 150, 240, var(--bg-opacity));
 }
 
-html.dark.crimson {
-    --bx-shadow: crimson;
-    --link-color: crimson;
+html.dark.rose {
+    --bx-shadow: rose;
+    --link-color: rose;
     --bg-opacity: 0.3;
     --bg-color-opacity: rgba(215, 0, 60, var(--bg-opacity));
 }
