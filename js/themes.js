@@ -1,52 +1,63 @@
-$(document).ready(function () {
-  var themeColor = getComputedStyle(document.documentElement)
-    .getPropertyValue("--bx-shadow")
-    .trim();
-  $('meta[name="theme-color"]').attr("content", themeColor);
+let metaColor = document.querySelector('meta[name="theme-color"]');
 
-  function changetheme(theme) {
-    var documentRoot = document.querySelector("html").className;
-    if (documentRoot.includes("light")) {
-      if (!documentRoot.includes(theme)) {
-        documentRoot = `${theme} light`;
-        document.querySelector("html").className = documentRoot;
-        themeColor =
-          getComputedStyle(document
-            .documentElement)
-          .getPropertyValue(
-            "--bx-shadow")
-          .trim();
-        $('meta[name="theme-color"]')
-          .attr("content",
-            themeColor);
-      }
-    } else if (documentRoot.includes("dark")) {
-      if (!documentRoot.includes(theme)) {
-        documentRoot = `${theme} dark`;
-        document.querySelector("html").className = documentRoot;
-        themeColor =
-          getComputedStyle(document
-            .documentElement)
-          .getPropertyValue(
-            "--bx-shadow")
-          .trim();
-        $('meta[name="theme-color"]')
-          .attr("content",
-            themeColor);
-      }
-    } else {
-      return;
-    }
-  }
 
-  let btn_themes = document.querySelectorAll(".btn-theme");
-  btn_themes.item(0).addEventListener("click", () => {
-    changetheme("crimson");
-  });
-  btn_themes.item(1).addEventListener("click", () => {
-    changetheme("blueviolet");
-  });
-  btn_themes.item(2).addEventListener("click", () => {
-    changetheme("dodgerblue");
-  });
+let themeAssest = getComputedStyle(document.documentElement).getPropertyValue('--bx-shadow').trim();
+
+
+let btn_themes = document.querySelectorAll('.btn-theme');
+
+
+btn_themes.item(0).addEventListener('click', () => {
+    changeTheme('crimson');
 });
+
+btn_themes.item(1).addEventListener('click', () => {
+    changeTheme('darkviolet');
+});
+
+btn_themes.item(2).addEventListener('click', () => {
+    changeTheme('CornflowerBlue');
+});
+
+function changeTheme(theme) {
+    let documentTheme = document.querySelector('html').className;
+    
+    let themeAssest = getComputedStyle(document.documentElement).getPropertyValue('--bx-shadow').trim();
+
+    localStorage.setItem('themeMetaColor', theme);
+    
+    
+    metaColor.setAttribute('content', theme);
+
+
+    if (documentTheme.includes('light') && !(documentTheme.includes(theme))) {
+        document.querySelector('html').className = `${theme} light`;
+    } else if (documentTheme.includes('dark') && !(documentTheme.includes(theme))) {
+        document.querySelector('html').className = `${theme} dark`;
+    } else {
+        return;
+    }
+    
+    
+}
+
+function loadTheme() {
+    let storedThemeMetaColor = localStorage.getItem('themeMetaColor');
+    
+    
+    if (storedThemeMetaColor) {
+        metaColor.setAttribute('content', storedThemeMetaColor);
+        let documentTheme = document.querySelector('html').className;
+        if (documentTheme.includes('light') && !(documentTheme.includes(storedThemeMetaColor))) {
+            document.querySelector('html').className = `${storedThemeMetaColor} light`;
+        } else if (documentTheme.includes('dark') && !(documentTheme.includes(storedThemeMetaColor))) {
+            document.querySelector('html').className = `${storedThemeMetaColor} dark`;
+        } else {
+            return;
+        }
+    }
+    
+    
+}
+
+window.onload = loadTheme;

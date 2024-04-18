@@ -26,10 +26,10 @@ html.dark {
     --text-inner-color: #121212;
 }
 
-html.light.dodgerblue {
-    --bx-shadow: dodgerblue;
-    --link-color: dodgerblue;
-    --navbar-brand-color: dodgerblue;
+html.light.CornflowerBlue {
+    --bx-shadow: CornflowerBlue;
+    --link-color: CornflowerBlue;
+    --navbar-brand-color: CornflowerBlue;
     --bg-opacity: 0.1;
     --bg-color-opacity: rgba(30, 144, 255, var(--bg-opacity));
 }
@@ -42,17 +42,17 @@ html.light.crimson {
     --bg-color-opacity: rgba(220, 20, 60, var(--bg-opacity));
 }
 
-html.light.blueviolet {
-    --bx-shadow: blueviolet;
-    --link-color: blueviolet;
-    --navbar-brand-color: blueviolet;
+html.light.darkviolet {
+    --bx-shadow: darkviolet;
+    --link-color: darkviolet;
+    --navbar-brand-color: darkviolet;
     --bg-opacity: 0.1;
     --bg-color-opacity: rgba(138, 43, 226, var(--bg-opacity));
 }
 
-html.dark.dodgerblue {
-    --bx-shadow: dodgerblue;
-    --link-color: dodgerblue;
+html.dark.CornflowerBlue {
+    --bx-shadow: CornflowerBlue;
+    --link-color: CornflowerBlue;
     --bg-opacity: 0.3;
     --bg-color-opacity: rgba(0, 150, 240, var(--bg-opacity));
 }
@@ -64,9 +64,9 @@ html.dark.crimson {
     --bg-color-opacity: rgba(215, 0, 60, var(--bg-opacity));
 }
 
-html.dark.blueviolet {
-    --bx-shadow: blueviolet;
-    --link-color: blueviolet;
+html.dark.darkviolet {
+    --bx-shadow: darkviolet;
+    --link-color: darkviolet;
     --bg-opacity: 0.3;
     --bg-color-opacity: rgba(200, 0, 215, var(--bg-opacity));
 }

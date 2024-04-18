@@ -17,10 +17,13 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
+    position: relative;
+    z-index: -1000;
 }
 
 .navbar {
     background-color: transparent !important;
+    position: relative;
 }
 
 .navbar-toggler span {
@@ -108,12 +111,12 @@ body {
     box-shadow: 0 0 0 0.1rem crimson !important;
 }
 
-.change-theme button.dodgerblue-button {
-    box-shadow: 0 0 0 0.1rem dodgerblue !important;
+.change-theme button.CornflowerBlue-button {
+    box-shadow: 0 0 0 0.1rem CornflowerBlue !important;
 }
 
-.change-theme button.blueviolet-button {
-    box-shadow: 0 0 0 0.1rem blueviolet !important;
+.change-theme button.darkviolet-button {
+    box-shadow: 0 0 0 0.1rem darkviolet !important;
 }
 
 .change-theme button:last-of-type {
@@ -121,8 +124,8 @@ body {
 }
 
 .crimson-theme,
-.dodgerblue-theme,
-.blueviolet-theme {
+.CornflowerBlue-theme,
+.darkviolet-theme {
     border-radius: 50px;
     padding: 13.4px;
 }
@@ -131,12 +134,12 @@ body {
     background-color: crimson !important;
 }
 
-.dodgerblue-theme {
-    background-color: dodgerblue !important;
+.CornflowerBlue-theme {
+    background-color: CornflowerBlue !important;
 }
 
-.blueviolet-theme {
-    background-color: blueviolet !important;
+.darkviolet-theme {
+    background-color: darkviolet !important;
 }
 
 .search_website {

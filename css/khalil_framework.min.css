@@ -161,7 +161,6 @@ button {
     width: 50px;
     margin: 0;
     border-radius: 15px;
-    box-shadow: 0 0 0 0.08rem var(--bx-shadow);
     background-color: transparent !important;
     color: var(--text-color);
     position: relative;

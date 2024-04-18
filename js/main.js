@@ -24,8 +24,6 @@ $(document).ready(function() {
                 "dark").toggleClass(
                 "light");
         });
-        
-        
 });
 
 
