@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     $(".navbar-toggler").click(
         function() {
             $("#navbar").slideToggle(
@@ -14,15 +13,3 @@ $(document).ready(function() {
             "active");
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-

@@ -212,39 +212,77 @@ body {
     }
 }
 
-.website_content {
-    padding: 2rem 1rem;
-    background-color: var(--bg-color);
-}
 
-@media (max-width: 1199.98px) {
-    .website_content > .container {
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-.card {
+.info {
     background-color: var(--bg-color-opacity);
-    justify-content: center;
-    border-radius: 17px;
+    width: 100%;
+    padding: 2rem 0;
+    font-weight: 300;
+    font-size: 35px;
 }
 
-.Home_page_card {
+.info:nth-child(odd) {
+    background-color: var(--bg-color) !important;
+}
+
+.info h2 , h2 {
+    font-size: 35px;
+    flex: 1 0 100%;
+    color: var(--bx-shadow);
+}
+
+.info p {
+    margin-top: 20px;
+}
+
+.info.images .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info.images .container .row div[class*="col"] div {
+    height: 300px;
+    flex: 1 0 100%;
+    display: flex;
+    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-opacity);
+    border-radius: 20px;
+}
+
+.website_content .row {
+    margin: 1rem 0;
+}
+
+.Home_Page_card {
     background-color: var(--bx-shadow);
     color: #F8F7F8 !important;
-    letter-spacing: 1px;
-    width: 100%;
-    margin: 20px 0 0 0;
-    justify-content: center;
-    flex: 1 0 100%;
-    padding: 20px 20px 20px 25px;
-    font-size: 30px !important;
+    height: 150px;
+    border: 1px solid var(--bg-color) !important;
+    flex: 0.5 0 50%;
+    border-radius: 0;
+    justify-content: center !important;
+    align-items: center !important;
+    transition: transform .05s linear;
 }
+
+.card-image {
+    border-radius: 20px !important;
+}
+
+.Home_Page_card:hover {
+    transform: scale(0.95);
+    background-color: var(--bg-color-opacity);
+    color: var(--text-color) !important;
+}
+
+
 
 .Home_page_card h6 {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
 }
 
@@ -276,6 +314,10 @@ body {
     padding: 1rem;
     display: flex;
     align-items: center;
+}
+
+.footer .social_media_links {
+    min-height: 25vh;
 }
 
 .footer p {
