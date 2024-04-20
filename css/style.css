@@ -212,7 +212,7 @@ body {
     }
 }
 
-.website_content {
+.website_content , .sub_Info {
     background-color: var(--bg-color);
 }
 
@@ -226,7 +226,7 @@ body {
     text-align: baseline;
 }
 
-.Home_Page_Website_content .container h3 {
+.Home_Page_Website_content .container h3 , .sub_Info .container h3 {
     font-size: 42px;
     padding-top: 2rem;
     color: var(--bx-shadow);
@@ -252,8 +252,45 @@ body {
 
 .Home_Page_Website_content .Home_Page_Card:hover {
     transform: scale(0.97);
-    box-shadow: 0 0 0 .08rem var(--text-color);
 }
+
+.some_images .Home_Page_Card {
+    height: 150px;
+}
+
+
+.Byadiaa_Part {
+    background-color: forestgreen !important;
+}
+
+.Masiyaf_Part {
+    background-color: hotpink !important;
+}
+
+.sub_Info .container {
+    background-color: var(--bx-shadow) !important;
+}
+
+.sub_Info .container * {
+    color: #f6f5f6 !important;
+}
+
+.sub_Info a {
+    display: flex;
+    align-items: center;
+    flex: 1 0 100%;
+    font-size: 26px;
+    padding-top: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+.sub_Info a span {
+    margin: 0 20px;
+}
+
+
+
+
 
 .footer .container{
     background-color: var(--bx-shadow) !important;
