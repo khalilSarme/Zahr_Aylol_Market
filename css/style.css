@@ -280,7 +280,7 @@ body {
     align-items: center;
     flex: 1 0 100%;
     font-size: 26px;
-    padding-top: 1rem;
+    margin-top: 1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
