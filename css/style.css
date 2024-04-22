@@ -184,7 +184,7 @@ body {
 
 @media (max-width: 1169px) {
     .navbar ul li a {
-        padding: 15px 0;
+        padding: 15px 5px;
         margin-top: 25px;
     }
     .change-theme {
@@ -211,7 +211,7 @@ body {
         margin: 0 !important;
     }
 }
-
+/*
 .website_content , .sub_Info {
     background-color: var(--bg-color);
 }
@@ -291,11 +291,65 @@ body {
 
 
 
+*/
 
-.footer .container{
-    background-color: var(--bx-shadow) !important;
+.Home_Page_Website_Content {
+    background-color: var(--bg-color);
+}
+
+.Home_Page_Website_Content .group_info .group_content {
+    padding: 1rem 0;
+}
+
+.Home_Page_Website_Content .row:nth-child(even) .Home_Page_Card {
+    background-color: var(--bg-color-opacity);
+}
+
+.row h3 {
+    flex: 1 0 100%;
+    padding: 1rem;
+    color: var(--bx-shadow);
+}
+
+.Home_Page_Card {
+    background-color: var(--bg-color);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 .4rem 0 var(--text-color);
+}
+
+.card_title {
+    color: var(--bx-shadow);
+}
+
+.card_title , .card_content {
+    padding: 0.5rem 0 0 0;
+}
+
+.sub_Info .container {
+    background-color: var(--bg-color-opacity) !important;
+}
+
+.sub_Info .container h3 {
+    color: var(--bx-shadow) !important;
+}
+
+.sub_Info .container a {
+    display: flex;
+    align-items: center;
+    flex: 1 0 100%;
+    padding: 0.5rem 1rem;
+    color: var(--text-color) !important;
+}
+
+.sub_Info .container a span {
+    margin: 0 1rem 0 0.5rem;
+}
+
+.footer .container {
+    background-color: var(--bg-color-opacity) !important;
     font-size: 30px;
-    color: #f6f5f6;
+    color: var(--text-color) !important;
 }
 
 .footer .container .group_info {

@@ -1,6 +1,6 @@
 :root {
     --text-color: #121212;
-    --bg-color: #f9f8f9;
+    --bg-color: #f5f4f5;
     --bx-shadow: #121212;
     --link-color: #212121;
     --link-active: rgba(225, 225, 225, 0.4);
@@ -12,7 +12,7 @@
 
 html.light {
     --text-color: #121212;
-    --bg-color: #f9f8f9;
+    --bg-color: #f5f4f5;
     --navbar-brand-color: #121212;
     --bx-shadow: #121212;
     --text-inner-color: #f8f7f8;
