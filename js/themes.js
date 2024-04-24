@@ -6,7 +6,7 @@ rootTheme.addEventListener("click", () => {
 
 let metaColor = document.querySelector('meta[name="theme-color"]');
 
-let btn_themes = document.querySelectorAll(".btn-theme");
+let btn_themes = document.querySelectorAll(".btn_theme_color");
 
 btn_themes.item(0).addEventListener("click", () => {
   setTheme("crimson");
@@ -18,6 +18,10 @@ btn_themes.item(1).addEventListener("click", () => {
 
 btn_themes.item(2).addEventListener("click", () => {
   setTheme("steelblue");
+});
+
+btn_themes.item(3).addEventListener("click", () => {
+  setTheme("forestgreen");
 });
 
 function setTheme(theme) {

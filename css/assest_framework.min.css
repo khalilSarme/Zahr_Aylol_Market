@@ -34,6 +34,14 @@ html.light.steelblue {
     --bg-color-opacity: rgba(30, 144, 255, var(--bg-opacity));
 }
 
+html.light.forestgreen {
+    --bx-shadow: forestgreen;
+    --link-color: forestgreen;
+    --navbar-brand-color: forestgreen;
+    --bg-opacity: 0.1;
+    --bg-color-opacity: rgba(34, 134, 34, var(--bg-opacity));
+}
+
 html.light.crimson {
     --bx-shadow: crimson;
     --link-color: crimson;
@@ -55,6 +63,13 @@ html.dark.steelblue {
     --link-color: steelblue;
     --bg-opacity: 0.3;
     --bg-color-opacity: rgba(0, 150, 240, var(--bg-opacity));
+}
+
+html.dark.forestgreen {
+    --bx-shadow: forestgreen;
+    --link-color: forestgreen;
+    --bg-opacity: 0.3;
+    --bg-color-opacity: rgba(0, 140, 28, var(--bg-opacity));
 }
 
 html.dark.crimson {

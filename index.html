@@ -32,6 +32,11 @@
 
     <link
       rel="stylesheet"
+      href="../../Documents/Front-End-Projects/Khalil_Net/css/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
       href="css/assest_framework.min.css"
       type="text/css"
       media="all"
@@ -79,15 +84,32 @@
 
     <div class="Home_Page_Website_Content">
       <div class="container">
+        <!-- Theme Change Start -->
         <div class="change_theme">
-          <button type="button">
-            <span class="fas fa-moon"></span>
+          <button type="button" class="root-theme">
+            <span class="fas fa-moon" id="theme-icon"></span>
           </button>
-          <button type="button">
+          <button type="button" class="root_theme_color_setting">
             <span class="fas fa-cog fa-spin"></span>
           </button>
         </div>
-        <div class="change_theme_buttons"></div>
+        <div class="btn_themes_color_container">
+          <div class="theme_buttons_container">
+            <button class="btn btn_theme_color">
+              <span class="theme_color_circle theme_crimson"></span>
+            </button>
+            <button class="btn btn_theme_color">
+              <span class="theme_color_circle theme_darkviolet"></span>
+            </button>
+            <button class="btn btn_theme_color">
+              <span class="theme_color_circle theme_steelblue"></span>
+            </button>
+            <button class="btn btn_theme_color">
+              <span class="theme_color_circle theme_forestgreen"></span>
+            </button>
+          </div>
+        </div>
+        <!-- Theme Change End -->
       </div>
     </div>
 
