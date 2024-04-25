@@ -1,216 +1,216 @@
 ::-webkit-scrollbar {
-  width: 9px;
-  background-color: var(--bg-color);
-  border-radius: 5px;
+    width: 9px;
+    background-color: var(--bg-color);
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--bx-shadow);
-  border-radius: 5px;
+    background-color: var(--bx-shadow);
+    border-radius: 5px;
 }
 
 @font-face {
-  font-family: Overlock;
-  src: url(./fonts/Overlock-BoldItalic.ttf);
+    font-family: Overlock;
+    src: url(./fonts/Overlock-BoldItalic.ttf);
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  position: relative;
-  width: 100%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    position: relative;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: background-color .3s ease-in-out , color .3s linear;
 }
 
 body::before {
-  position: absolute;
-  content: "Zahr Aylol Market";
-  opacity: 0.8;
-  width: 100%;
-  height: 500px;
-  background-color: var(--bx-shadow);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 70px;
-  color: #e7e6e7 !important;
-  font-family: Overlock;
-  z-index: -10000;
+    position: absolute;
+    content: "Zahr Aylol Market";
+    opacity: 0.8;
+    width: 100%;
+    height: 500px;
+    background-color: var(--bg-color-opacity);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 77px;
+    color: var(--text-color) !important;
+    font-family: Overlock;
+    z-index: -10000;
+    text-align: center;
 }
 
 @media (max-width: 767px) {
-  body::before {
-    font-size: 40px;
-    word-wrap: break-word;
-  }
+    body::before {
+        font-size: 35px;
+        word-wrap: break-word;
+    }
 }
 
 @media (min-width: 768px) {
     body::before {
-      font-size: 80px;
+        font-size: 80px;
     }
-  }
+}
 
 /* Navbar Start */
 
 .navbar {
-  background-color: var(--bg-color) !important;
-  position: relative;
+    background-color: var(--bg-color) !important;
+    position: -webkit-sticky;
+    top: 0;
 }
 
 .navbar-brand {
-  color: var(--bx-shadow) !important;
-  font-size: 37px !important;
-  display: inline-block;
+    color: var(--bx-shadow) !important;
+    font-size: 37px !important;
+    display: inline-block;
 }
 
 .navbar-brand span {
-  font-family: Overlock;
+    font-family: Overlock;
 }
 
 .navbar-toggler .fa-bars {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .navbar ul li {
-  display: flex;
+    display: flex;
 }
 
 .navbar ul li a {
-  flex: 1 0 100%;
-  position: relative;
-  padding: 15px 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 27px;
-  color: var(--text-color);
-  letter-spacing: 1px;
+    flex: 1 0 100%;
+    position: relative;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 27px;
+    color: var(--text-color);
+    letter-spacing: 1px;
 }
 
 .navbar ul li a:active,
 .navbar ul li a.active,
 .navbar ul li a:hover {
-  color: var(--bx-shadow) !important;
+    color: var(--bx-shadow) !important;
 }
 
 .navbar ul li a:active::after,
 .navbar ul li a.active::after,
 .navbar ul li a:hover::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  display: inline-block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--bx-shadow);
-  border-radius: 3px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--bx-shadow);
+    border-radius: 3px;
 }
 
 .navbar ul li a i {
-  margin: 0 20px 0 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin: 0 20px 0 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 1169px) {
-  .navbar ul li a {
-    margin-top: 25px;
-  }
+    .navbar .navbar-collapse {
+        margin-bottom: 20px;
+    }
+    .navbar ul li a {
+        margin-top: 25px;
+    }
 }
 
 @media (min-width: 1170px) {
-  .navbar ul li:not(:last-of-type) {
-    margin-right: 30px;
-  }
+    .navbar ul li:not(:last-of-type) {
+        margin-right: 30px;
+    }
 
-  .navbar ul li a {
-    justify-content: center;
-  }
+    .navbar ul li a {
+        justify-content: center;
+    }
 
-  .navbar ul li a i {
-    margin: 0 20px 0 0;
-  }
+    .navbar ul li a i {
+        margin: 0 20px 0 0;
+    }
 }
 
 /* Navbar End */
 
+
+/* Home Page Website Content Start */
+
 .Home_Page_Website_Content {
-    min-height: 600px;
     position: relative;
+    padding: 0.5rem 1rem;
+    min-height: 500px;
 }
 
-.Home_Page_Website_Content .container {
-    position: relative;
+
+@media (max-width: 1199.98px) {
+    .Home_Page_Website_Content > .container {
+        padding: 0 !important;
+    }
 }
 
-.change_theme {
+.change_theme  , .change_theme_container {
+    
     display: flex;
-    align-items: flex-end;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex: 1 0 100%;
 }
 
-.change_theme button {
-    height: 50px;
-    width: 50px;
-    font-size: 25px;
-    border-radius: 15px;
+.change_theme .btn {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    height: 55px;
+    width: 55px;
+    margin: 2rem 1rem;
+    border-radius: 10px;
+    font-size: 35px;
+}
+
+.row.main_card_row {
+    position: relative;
+    top: 250px;
+}
+
+.row.main_card_row .Home_Page_Card {
     background-color: var(--bg-color);
-    margin: 20px 0 0 0;
+    box-shadow: 0 0 .4rem 0rem var(--text-color);
     color: var(--text-color);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    width: calc(100% - 50px);
+    height: 200px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    transition: transform .3s ease-in-out;
+    font-weight: 600;
 }
 
-.btn_themes_color_container {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--bg-color);
-  transform: scale(0);
-  transition: transform .3s linear;
+.main_card_row .Home_Page_Card:hover {
+    transform: translateY(-10px);
+    
 }
 
-.tansform_scale {
-  transform: scale(1);
+.Home_Page_Card span {
+    font-size: 50px;
+    color: var(--bx-shadow);
 }
 
-.theme_buttons_container {
-  margin: auto;
-  width: 150px;
-  height: 150px;
-  padding: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-radius: 25px;
-  box-shadow: 0 0 0.8rem 0 var(--bx-shadow);
-}
-
-.theme_buttons_container button {
-  margin: 10px;
-  border-radius: 15px;
-  padding: 15px;
-  background-color: var(--bg-color) !important;
-  box-shadow: 0 0 0 .08rem var(--bx-shadow);
-}
-
-.theme_buttons_container button span {
-  padding: 10px;
-  border-radius: 50px;
-}
-
-.theme_crimson,
-.theme_darkviolet,
-.theme_steelblue,
-.theme_forestgreen {
-  background-color: #ea0 !important;
-}
+/* Home Page Website Content End */
