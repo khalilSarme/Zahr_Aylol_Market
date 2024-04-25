@@ -1,6 +1,6 @@
 :root {
     --text-color: #232323;
-    --bg-color: #f5f4f5;
+    --bg-color: #f3f2f3;
     --bx-shadow: #232323;
     --link-color: #212121;
     --link-active: rgba(225, 225, 225, 0.4);
@@ -12,17 +12,17 @@
 
 html.light {
     --text-color: #232323;
-    --bg-color: #f5f4f5;
+    --bg-color: #f3f2f3;
     --navbar-brand-color: #232323;
     --bx-shadow: #232323;
-    --text-inner-color: #f8f7f8;
+    --text-inner-color: #f4f3f4;
 }
 
 html.dark {
     --text-color: #f4f3f4;
     --bg-color: #232323;
-    --navbar-brand-color: #F8F7F8;
-    --bx-shadow: #f8f7f8;
+    --navbar-brand-color: #f4f3f4;
+    --bx-shadow: #f4f3f4;
     --text-inner-color: #232323;
 }
 

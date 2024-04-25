@@ -26,15 +26,14 @@ body {
 body::before {
     position: absolute;
     content: "Zahr Aylol Market";
-    opacity: 0.8;
+    opacity: 0.98;
     width: 100%;
     height: 500px;
-    background-color: var(--bg-color-opacity);
+    background-color: var(--bx-shadow);
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 77px;
-    color: var(--text-color) !important;
+    color: #f2f1f2 !important;
     font-family: Overlock;
     z-index: -10000;
     text-align: center;
@@ -57,8 +56,10 @@ body::before {
 
 .navbar {
     background-color: var(--bg-color) !important;
-    position: -webkit-sticky;
+    position: relative;
     top: 0;
+    opacity: 1;
+    font-weight: 800;
 }
 
 .navbar-brand {
@@ -92,6 +93,7 @@ body::before {
     font-size: 27px;
     color: var(--text-color);
     letter-spacing: 1px;
+    transition: color .1s linear;
 }
 
 .navbar ul li a:active,
@@ -145,13 +147,11 @@ body::before {
 
 /* Navbar End */
 
-
 /* Home Page Website Content Start */
 
 .Home_Page_Website_Content {
     position: relative;
     padding: 0.5rem 1rem;
-    min-height: 500px;
 }
 
 
@@ -162,7 +162,6 @@ body::before {
 }
 
 .change_theme  , .change_theme_container {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,37 +179,112 @@ body::before {
     font-size: 35px;
 }
 
-.row.main_card_row {
-    position: relative;
-    top: 250px;
+.change_theme .btn:hover {
+    animation: transformer .3s ease-in-out alternate forwards infinite;
 }
 
-.row.main_card_row .Home_Page_Card {
+.group_rows_Home_Page_Content {
+    position: relative;
+}
+
+.Home_Page_Card {
     background-color: var(--bg-color);
-    box-shadow: 0 0 .4rem 0rem var(--text-color);
+    box-shadow: 0 0 .3rem 0rem var(--text-color);
     color: var(--text-color);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    align-content: center;
     margin: 2rem auto;
-    width: calc(100% - 50px);
-    height: 200px;
     padding: 15px;
     text-align: center;
-    border-radius: 15px;
     transition: transform .3s ease-in-out;
     font-weight: 600;
 }
 
-.main_card_row .Home_Page_Card:hover {
-    transform: translateY(-10px);
-    
+.row.main_card_row {
+    margin-top: 10rem;
 }
 
-.Home_Page_Card span {
-    font-size: 50px;
+.row.main_card_row .Home_Page_Card {
+    width: calc(100% - 20px);
+    height: 250px;
+    border-radius: 0px;
+}
+
+.row.main_card_row .Home_Page_Card:hover {
+    animation: transformer .3s ease-in-out alternate forwards infinite;
+}
+
+@keyframes transformer {
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+.Home_Page_Card > span {
+    font-size: 60px;
     color: var(--bx-shadow);
 }
 
+.Home_Page_Content {
+    background-color: transparent !important;
+}
+
+.Home_Page_Content .Home_Page_Card {
+    border-radius: 15px;
+}
+
+.Home_Page_Content .Home_Page_Card img {
+    width: 150px;
+    height: 150px;
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+.Home_Page_Card button {
+    border: 1px solid var(--bx-shadow) !important;
+    background-color: var(--bx-shadow);
+    color: #f2f1f2 !important;
+    margin: 1rem auto;
+    font-weight: 600;
+    transition: background-color .2s linear;
+}
+
+.Home_Page_Card button:hover {
+    background-color: var(--bg-color);
+    color: var(--bx-shadow) !important;
+}
+
 /* Home Page Website Content End */
+
+.ads img {
+    flex: 1 0 50%;
+}
+
+@media (max-width: 1199.98px) {
+    .ads > .container {
+        padding: 0 !important;
+        background-color: aqua !important;
+    }
+}
+
+/* Footer Start */
+
+.footer {
+    background-color: var(--bx-shadow);
+    position: relative;
+    padding: 1rem;
+    font-size: 35px;
+    text-align: center;
+    color: #f2f1f2 !important;
+}
+
+@media (max-width: 1197px) {
+    .footer > .container {
+        padding: 0;
+    }
+}
+
+/* Footer End */
