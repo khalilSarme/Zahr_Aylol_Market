@@ -289,6 +289,19 @@ body {
   padding: 5px;
 }
 
+.Home_Page_Content_Section_2 .sub_card .btn_more {
+    color: #f4f1f4 !important;
+    background-color: var(--bx-shadow) !important;
+    border: 1.75px solid var(--bx-shadow) !important;
+    margin: 1rem auto;
+    transition: background-color .1s linear , color .1s linear;
+}
+
+.Home_Page_Content_Section_2 .sub_card .btn_more:hover , .Home_Page_Content_Section_2 .sub_card .btn_more:focus {
+    background-color: var(--bg-color) !important;
+    color: var(--bx-shadow) !important;
+}
+
 /* Home_Page_Content_Section_2 End */
 
 /* Main Home Page Website Content End */
