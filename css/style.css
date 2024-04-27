@@ -52,7 +52,7 @@ body {
 }
 
 .navbar-brand {
-  color: var(--text-color) !important;
+  color: #f4f1f4 !important;
   font-size: 37px !important;
   display: inline-block;
 }
@@ -82,7 +82,7 @@ body {
   justify-content: flex-start;
   font-size: 27px;
   font-weight: 700;
-  color: var(--text-color) !important;
+  color: #f4f1f4 !important;
   letter-spacing: 1px;
   transition: color 0.1s linear;
 }
