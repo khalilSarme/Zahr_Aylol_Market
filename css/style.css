@@ -213,6 +213,7 @@ body {
 .Home_Page_Website_Content {
     position: relative;
     padding: 0.5rem 1rem;
+    background-color: var(--bg-color);
 }
 
 
@@ -261,7 +262,7 @@ body {
     text-align: center;
     transition: transform .3s ease-in-out;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .row.main_card_row {
@@ -367,6 +368,7 @@ body {
 .sub_footer {
     background-color: var(--bx-shadow);
     padding: 1rem 0;
+    margin-top: 10rem;
 }
 
 .sub_footer h4 {
