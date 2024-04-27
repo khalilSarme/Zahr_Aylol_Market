@@ -1,6 +1,6 @@
 :root {
     --text-color: #232323;
-    --bg-color: #dfdedf;
+    --bg-color: #f5f2f5;
     --bx-shadow: #232323;
     --link-color: #212121;
     --link-active: rgba(225, 225, 225, 0.4);
@@ -12,17 +12,17 @@
 
 html.light {
     --text-color: #232323;
-    --bg-color: #dfdedf;
+    --bg-color: #f5f2f5;
     --navbar-brand-color: #232323;
     --bx-shadow: #232323;
-    --text-inner-color: #d3d2d3;
+    --text-inner-color: #f6f3f6;
 }
 
 html.dark {
-    --text-color: #d3d2d3;
+    --text-color: #f6f3f6;
     --bg-color: #232323;
-    --navbar-brand-color: #d3d2d3;
-    --bx-shadow: #d3d2d3;
+    --navbar-brand-color: #f6f3f6;
+    --bx-shadow: #f6f3f6;
     --text-inner-color: #232323;
 }
 
@@ -30,7 +30,7 @@ html.light.steelblue {
     --bx-shadow: steelblue;
     --link-color: steelblue;
     --navbar-brand-color: steelblue;
-    --bg-opacity: 0.1;
+    --bg-opacity: 0.4;
     --bg-color-opacity: rgba(30, 144, 255, var(--bg-opacity));
 }
 
@@ -38,7 +38,7 @@ html.light.forestgreen {
     --bx-shadow: forestgreen;
     --link-color: forestgreen;
     --navbar-brand-color: forestgreen;
-    --bg-opacity: 0.1;
+    --bg-opacity: 0.4;
     --bg-color-opacity: rgba(34, 134, 34, var(--bg-opacity));
 }
 
@@ -46,7 +46,7 @@ html.light.crimson {
     --bx-shadow: crimson;
     --link-color: crimson;
     --navbar-brand-color: crimson;
-    --bg-opacity: 0.1;
+    --bg-opacity: 0.4;
     --bg-color-opacity: rgba(220, 20, 60, var(--bg-opacity));
 }
 
@@ -54,7 +54,7 @@ html.light.darkviolet {
     --bx-shadow: darkviolet;
     --link-color: darkviolet;
     --navbar-brand-color: darkviolet;
-    --bg-opacity: 0.1;
+    --bg-opacity: 0.4;
     --bg-color-opacity: rgba(138, 43, 226, var(--bg-opacity));
 }
 
