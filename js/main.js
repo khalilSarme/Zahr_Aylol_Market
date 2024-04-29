@@ -3,10 +3,10 @@ $(document).ready(function () {
     $("#navbar").slideToggle("show");
   });
   $(".btn_theme_setting").click(function() {
-      $(".theme_color_container").toggleClass("scale-0")
+      $(".color_container").toggleClass("scale-0")
   });
-  $(".btn_theme_color").click(function() {
-      $(".theme_color_container").toggleClass("scale-0");
+  $(".btn_theme").click(function() {
+      $(".color_container").toggleClass("scale-0");
   });
   
   let images = ["image_01" , "image_02" , "image_03"]

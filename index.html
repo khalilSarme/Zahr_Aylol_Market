@@ -11,25 +11,21 @@
     name="description"
     content="Zahr Aylol Market is a shopping store , search for any products and if it is not found !  call us with a help request"
     />
+    
     <link
     rel="shortcut icon"
     href="images/Zahr_Aylol.svg"
     type="image/x-icon"
     />
     <link rel="apple-touch-icon" href="images/Zahr_Aylol.svg" />
+    
+    <!-- Style Sheets -->
 
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-
-    <link
-    rel="stylesheet"
-    href="css/khalil_framework.min.css"
-    type="text/css"
-    media="all"
-    />
-
+    
     <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.min.css" type="text/css" media="all" />
 
     <link
@@ -39,12 +35,29 @@
 
     <link
     rel="stylesheet"
-    href="css/assest_framework.min.css"
+    href="css/frameworks/khalil_framework.min.css"
     type="text/css"
     media="all"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+    rel="stylesheet"
+    href="css/frameworks/assest_framework.min.css"
+    type="text/css"
+    media="all"
+    />
+
+    <link rel="stylesheet" href="css/Components/footer.min.css" />
+
+    <link rel="stylesheet" href="css/Components/Home_Page_Sections.min.css">
+
+    <link rel="stylesheet" href="css/Components/navbar.min.css">
+
+    <link rel="stylesheet" href="css/Components/search.min.css">
+
+    <link rel="stylesheet" href="css/Components/theme.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
 
     <meta name="theme-color" content="crimson" />
 
@@ -77,10 +90,47 @@
             </div>
         </div>
     </nav>
-    <div class="search_website">
+
+    <!-- Theme Color Start -->
+
+    <div class="component change_theme_color">
+        <div class="container">
+            <button class="btn btn_theme_color root-theme" type="button">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <button class="btn btn_theme_color btn_theme_setting" type="button">
+                <i class="fas fa-cog fa-spin"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="scale-0 color_container">
+        <div class="container">
+            <div class="theme_color_container">
+                <button class="btn color_crimson btn_theme" type="button">
+                    <span></span>
+                </button>
+                <button class="btn color_darkviolet btn_theme" type="button">
+                    <span></span>
+                </button>
+                <button class="btn color_steelblue btn_theme" type="button">
+                    <span></span>
+                </button>
+                <button class="btn color_forestgreen btn_theme" type="button">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Color End -->
+
+    <!-- Search Content Start -->
+
+    <div class="component search_website">
         <div class="container">
             <form class="search_website_content" action="" method="get" accept-charset="utf-8">
-                <input type="text" name="search_website_content_key" id="search_website_content_key" value="" placeholder="Search"/>
+                <input type="text" name="search_website_content_key" id="search_website_content_key" value="" placeholder="Search" />
                 <button class="search_website_content_btn" type="button">
                     <i class="fas fa-search"></i>
                 </button>
@@ -88,300 +138,267 @@
         </div>
     </div>
 
-    <div class="Home_Page_Website_Content">
+    <!-- Search Content End -->
+
+    <div class="component Home_Page_Content_Section_1">
         <div class="container">
-            <!-- Theme Start -->
-            <div class="row change_theme_container" title="Change Theme">
-                <div class="change_theme">
-                    <button class="btn btn_theme btn_root_theme root-theme">
-                        <span class="fas fa-moon" id="theme-icon"></span>
-                    </button>
-                    <button class="btn btn_theme btn_theme_setting">
-                        <span class="fas fa-cog fa-spin"></span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="theme_color_container scale-0">
-                <h2>Change Theme</h2>
-                <div class="color_container">
-                    <button type="button" class="btn btn_theme_crimson btn_theme_color">
-                        <span></span>
-                    </button>
-                    <button type="button" class="btn btn_theme_darkviolet btn_theme_color">
-                        <span></span>
-                    </button>
-                    <button type="button" class="btn btn_theme_steelblue btn_theme_color">
-                        <span></span>
-                    </button>
-                    <button type="button" class="btn btn_theme_forestgreen btn_theme_color">
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Theme End -->
-            <div class="group_rows_Home_Page_Content">
-                <div class="row main_card_row">
-                    <div class="col-xl-4 col-md-4 col-12">
-                        <div class="Home_Page_Card">
-                            <span class="fas fa-home"></span>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 col-12">
-                        <div class="Home_Page_Card">
-                            <span class="fas fa-home"></span>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 col-12">
-                        <div class="Home_Page_Card">
-                            <span class="fas fa-home"></span>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            </p>
-                        </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-4 col-12">
+                    <div class="card main_card">
+                        <i class="fas fa-check-circle"></i>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
                     </div>
                 </div>
-
-                <div class="row Home_Page_Content">
-                    <div class="col-xl-4 col-md-4 col-12">
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
+                <div class="col-xl-4 col-md-4 col-12">
+                    <div class="card main_card">
+                        <i class="fas fa-cart-arrow-down"></i>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
                     </div>
-                    <div class="col-xl-4 col-md-4 col-12">
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 col-12">
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 col-12">
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 col-12">
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 col-12">
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
-                        <div class="Home_Page_Card">
-                            <img src="./images/Zahr_Aylol.svg" alt="" srcset="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <button>
-                                <span>Show More</span>
-                            </button>
-                        </div>
+                </div>
+                <div class="col-xl-4 col-md-4 col-12">
+                    <div class="card main_card">
+                        <i class="fas fa-truck"></i>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="component Home_Page_Content_Section_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 col-12">
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-4 col-md-4 col-12">
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-4 col-md-4 col-12">
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                    <div class="card sub_card">
+                        <img class="card_image" src="./images/image_19.jpg" alt="product_image" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn_more"><span> Show More </span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="empty"></div>
 
     <div class="sub_footer">
         <div class="container">

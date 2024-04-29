@@ -1,0 +1,100 @@
+/* Home_Page_Content_Section_1 Start */
+
+.Home_Page_Content_Section_1 > .container {
+  padding-bottom: 1.75rem;
+}
+
+.Home_Page_Content_Section_1 .main_card {
+  margin: 1.75rem auto 0 auto !important;
+  width: 100%;
+}
+
+.Home_Page_Content_Section_1 .main_card > i {
+  font-size: 60px;
+  margin: 2rem auto;
+  color: var(--bx-shadow);
+}
+
+.Home_Page_Content_Section_1 .main_card > p {
+  font-weight: 400;
+  padding: 5px;
+}
+
+@media (max-width: 767px) {
+  .Home_Page_Content_Section_1 .main_card > p {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Home_Page_Content_Section_1 .main_card > p {
+    font-size: 30px;
+  }
+}
+
+/* Home_Page_Content_Section_1 End */
+
+/* Home_Page_Content_Section_2 Start */
+
+.Home_Page_Content_Section_2 {
+  background-color: var(--bg-inner-color-opacity);
+}
+
+.Home_Page_Content_Section_2 > .container {
+  padding-bottom: 2rem;
+}
+
+.Home_Page_Content_Section_2 .sub_card {
+  margin: 2rem auto 0 auto !important;
+  background-color: var(--bg-color);
+  width: calc(100% - 0.75rem);
+  border-radius: 15px;
+}
+
+.Home_Page_Content_Section_2 .sub_card > i {
+  font-size: 60px;
+  margin: 2rem auto;
+  color: var(--bx-shadow);
+}
+
+.Home_Page_Content_Section_2 .sub_card img {
+    height: 150px;
+    width: 100px;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 0 0 .01rem var(--text-color);
+}
+
+.Home_Page_Content_Section_2 .sub_card > p {
+  font-weight: 400;
+  padding: 5px;
+}
+
+@media (max-width: 767px) {
+  .Home_Page_Content_Section_2 .sub_card > p {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Home_Page_Content_Section_2 .sub_card > p {
+    font-size: 28px;
+  }
+}
+
+.Home_Page_Content_Section_2 .sub_card .btn_more {
+    color: #f4f1f4 !important;
+    background-color: var(--bx-shadow) !important;
+    border: 1.75px solid var(--bx-shadow) !important;
+    margin: 1rem auto;
+    transition: background-color .1s linear , color .1s linear;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Home_Page_Content_Section_2 .sub_card .btn_more:hover , .Home_Page_Content_Section_2 .sub_card .btn_more:focus {
+    background-color: var(--bg-color) !important;
+    color: var(--bx-shadow) !important;
+}
+
+/* Home_Page_Content_Section_2 End */

@@ -1,0 +1,26 @@
+/* Search Content Start */
+.search_website_content {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+}
+
+.search_website_content input {
+  flex: 1 0;
+  padding: 15px;
+  color: #f4f1f4 !important;
+  background-color: var(--bg-color-opacity);
+}
+
+.search_website_content input::placeholder {
+  color: #f5f1f5 !important;
+}
+
+.search_website_content button {
+  font-size: 20px;
+  padding: 20px;
+  background-color: var(--bx-shadow);
+  color: #f4f1f4 !important;
+}
+
+/* Search Content End */
